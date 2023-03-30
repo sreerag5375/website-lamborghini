@@ -1,0 +1,121 @@
+@media (max-width: 767px) {
+  /* header */
+
+  /* logo */
+  header .logo img {
+    width: 60px;
+  }
+
+  header nav {
+    padding: 20px 24px;
+  }
+
+  /* menu-bar */
+
+  .nav-bar {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+  .nav-bar .fa-bars {
+    display: block;
+    font-size: 32px;
+    color: rgb(32, 31, 31);
+  }
+
+  /* menu items div */
+  .nav-bar .menu {
+    display: block;
+    background-color: rgb(247, 150, 23);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    padding: 30px;
+    display: none;
+  }
+
+  /* open menu */
+  .nav-bar .menu.open-menu {
+    display: block;
+  }
+
+  /* remove navitem a tag padding */
+  .nav-bar .menu a {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* home page styles */
+
+  /* main content */
+  .main-body .main-content {
+    top: 50%;
+    left: 24px;
+    right: 70px;
+  }
+  .main-content span {
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  .main-content p {
+    margin: 10px 0 28px 0;
+    line-height: 24px;
+  }
+
+  /* product lineup styles */
+
+  .product-lineup {
+    padding: 4px 14px;
+   
+  }
+  .product-lineup p {
+    padding: 10px 35px;
+  }
+
+  /* 2 cards for mobile device */
+  .swiper-slide .item3 {
+    display: none;
+  }
+
+  .swiper-slide.slide3 {
+    display: block;
+  }
+
+  .swiper-slide .wrapper .item1,
+  .item2 {
+    width: 45%;
+  }
+
+  /* footer */
+
+  .footer-section {
+    height: auto;
+    margin-bottom: 10px;
+    
+  }
+  .footer-section img {
+    height: 280px;
+  }
+  .footer-content {
+    padding-left: 10px;
+    width: 75%;
+    top: 60px;
+  }
+
+  .footer-content h3 {
+    font-size: 16px;
+  }
+  .footer-content h1 {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 5px 0 20px 0;
+  }
+
+  .footer-content .btn{
+    padding: 5px 10px;
+  }
+}
+
+/* small phones */

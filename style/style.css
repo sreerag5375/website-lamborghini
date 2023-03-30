@@ -1,0 +1,276 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* header styles */
+
+header nav {
+  display: flex;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0, 0) 95%);
+  padding: 10px 70px;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+}
+
+header .logo img {
+  width: 80px;
+  align-items: center;
+  display: flex;
+}
+
+.nav-bar .fa-bars {
+  display: none;
+}
+
+.nav-bar .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar a {
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 5px 0;
+  margin: 0 28px;
+  transition: color ease 0.1s;
+}
+
+.nav-bar li:last-child a {
+  margin-right: 0;
+}
+.nav-bar li:first-child a {
+  margin-left: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar a:hover {
+  color: #ffdb00;
+}
+
+.nav-bar li.active a {
+  border-bottom: 3px solid #ffdb00;
+}
+
+/* header ends */
+
+/* main body starts */
+
+.main-body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  position: relative;
+}
+
+.main-body .main-content {
+  position: absolute;
+  color: white;
+  top: 38%; /* acutally we use top 50 for center that div. but for achive that we need to use transform property also*/
+  /* transform: translateY(-50%); */
+  left: 78px;
+  max-width: 360px;
+}
+
+/* left content -main-body */
+.main-content h1 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 56px;
+  margin-bottom: 18px;
+}
+
+.main-content span {
+  font-size: 30px;
+  font-weight: 300;
+}
+.main-content p {
+  font-size: 24;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+/* button main-body  */
+
+.main-content .cta-btn {
+  background-color: #ffdb00;
+  border-radius: 20;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px 35px;
+  border-radius: 20px;
+  transition: all ease-in 0.24s;
+}
+
+.main-content .cta-btn:hover {
+  background-color: black;
+  color: #ffdb00;
+}
+
+/* main body ends */
+
+/* product line up starts  */
+
+.product-lineup {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 18px 70px;
+  background-color: #f6f6f6;
+}
+
+.product-lineup h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.product-lineup p {
+  font-size: 16px;
+  text-align: center;
+  padding: 12px 55px;
+}
+
+/* slider1 */
+.swiper .swiper-slide {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  /* background-color: teal; */
+  margin: 40px 0;
+}
+
+.swiper-slide .wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.swiper-slide.slide3{
+  display: none;
+}
+
+/* cards -slider */
+.swiper-slide .wrapper .item1,
+.item2,
+.item3 {
+  height: 78%;
+  width: 28%;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 3px 4px 12px grey;
+}
+
+.swiper-slide .wrapper img {
+  width: 100%;
+  transition: 0.5s ease-in;
+}
+
+.wrapper .car-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide .wrapper img:hover {
+  transform: scale(1.18) rotate(-1.3deg);
+}
+
+.swiper-slide .wrapper .btn {
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 16px;
+  padding: 2px 8px;
+  box-shadow: 1px 2px 6px rgba(87, 84, 84, 0.5);
+}
+
+/* slider scroll indication bullet styles */
+.swiper-pagination-bullet {
+  background-color: black;
+  border-radius: 0;
+}
+
+/* footer imag section */
+.footer-section {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.footer-section {
+  position: relative;
+}
+.footer-section img {
+  width: 100%;
+  height: 400px;
+  opacity: 0.5;
+  object-fit: cover;
+}
+
+.footer-content {
+  position: absolute;
+  top: 28%;
+  text-align: left;
+  padding-left: 70px;
+  width: 50%;
+}
+
+.footer-content h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer-content h1 {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 58px;
+  padding: 18px 0 30px 0;
+}
+
+.footer-content .btn {
+  background-color: #ffdb00;
+  color: black;
+  font-weight: 400;
+  padding: 8px 26px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px grey;
+  transition: all ease-in-out 0.4s;
+}
+.footer-content .btn:hover {
+  background-color: black;
+  color: #ffdb00;
+}
+
+/* footer ends */
